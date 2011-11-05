@@ -15,7 +15,8 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texdirflatten.tar
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texdirflatten.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
+Requires(post):	texlive-kpathsea
 Provides:	texlive-texdirflatten.bin = %{EVRD}
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
