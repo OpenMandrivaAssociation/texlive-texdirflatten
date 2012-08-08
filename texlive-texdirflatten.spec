@@ -1,12 +1,13 @@
-# revision 18835
+# revision 26313
 # category Package
 # catalog-ctan /support/texdirflatten
-# catalog-date 2009-04-22 09:01:36 +0200
+# catalog-date 2012-01-12 19:29:56 +0100
 # catalog-license artistic
-# catalog-version undef
+# catalog-version 1.1
 Name:		texlive-texdirflatten
-Version:	20090422
-Release:	2
+Epoch:		1
+Version:	1.1
+Release:	1
 Summary:	Collect files related to a LaTeX job in a single directory
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/texdirflatten
