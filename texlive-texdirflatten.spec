@@ -1,4 +1,4 @@
-# revision 26313
+# revision 29725
 # category Package
 # catalog-ctan /support/texdirflatten
 # catalog-date 2012-01-12 19:29:56 +0100
@@ -40,7 +40,7 @@ tree).
 %{_bindir}/texdirflatten
 %{_texmfdistdir}/scripts/texdirflatten/texdirflatten
 %doc %{_mandir}/man1/texdirflatten.1*
-%doc %{_texmfdir}/doc/man/man1/texdirflatten.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/texdirflatten.man1.pdf
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,23 +54,6 @@ pushd %{buildroot}%{_bindir}
     ln -sf %{_texmfdistdir}/scripts/texdirflatten/texdirflatten texdirflatten
 popd
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf texmf-dist %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 1:1.1-1
-+ Revision: 812895
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20090422-2
-+ Revision: 756604
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20090422-1
-+ Revision: 719681
-- texlive-texdirflatten
-- texlive-texdirflatten
-- texlive-texdirflatten
-
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
