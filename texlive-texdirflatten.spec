@@ -1,13 +1,7 @@
-# revision 29725
-# category Package
-# catalog-ctan /support/texdirflatten
-# catalog-date 2012-01-12 19:29:56 +0100
-# catalog-license artistic
-# catalog-version 1.1
 Name:		texlive-texdirflatten
 Epoch:		1
-Version:	1.1
-Release:	9
+Version:	1.3
+Release:	1
 Summary:	Collect files related to a LaTeX job in a single directory
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/texdirflatten
@@ -38,9 +32,10 @@ tree).
 #-----------------------------------------------------------------------
 %files
 %{_bindir}/texdirflatten
-%{_texmfdistdir}/scripts/texdirflatten/texdirflatten
+%{_texmfdistdir}/scripts/texdirflatten
 %doc %{_mandir}/man1/texdirflatten.1*
 %doc %{_texmfdistdir}/doc/man/man1/texdirflatten.man1.pdf
+%doc %{_texmfdistdir}/doc/support/texdirflatten
 
 #-----------------------------------------------------------------------
 %prep
