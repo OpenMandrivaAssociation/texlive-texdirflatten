@@ -1,7 +1,7 @@
 Name:		texlive-texdirflatten
 Epoch:		1
 Version:	55064
-Release:	1
+Release:	2
 Summary:	Collect files related to a LaTeX job in a single directory
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/texdirflatten
