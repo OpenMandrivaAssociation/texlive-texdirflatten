@@ -4,7 +4,7 @@ Version:	55064
 Release:	2
 Summary:	Collect files related to a LaTeX job in a single directory
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/support/texdirflatten
+URL:		https://www.ctan.org/tex-archive/support/texdirflatten
 License:	ARTISTIC
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texdirflatten.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texdirflatten.doc.r%{version}.tar.xz
