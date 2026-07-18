@@ -1,5 +1,6 @@
 %global tl_name texdirflatten
 %global tl_revision 55064
+%global tl_bin_links texdirflatten:%{_texmfdistdir}/scripts/texdirflatten/texdirflatten
 
 Name:		texlive-%{tl_name}
 Epoch:		1
@@ -15,6 +16,8 @@ BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(texdirflatten.bin)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}.bin) = %{tl_revision}
+Provides:	texlive-%{tl_name}.bin = %{EVRD}
 
 %description
 The Perl script parses a LaTeX file recursively, scanning all child
